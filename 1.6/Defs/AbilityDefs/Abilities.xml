@@ -2,115 +2,6 @@
 <Defs>
 
 	<AbilityDef ParentName="AbilityTouchBase">
-		<defName>VRE_AnimalFeed</defName>
-		<label>animalfeed</label>
-		<description>Bite the target animal and extract hemogen directly from their blood. The animal will lose blood and will be horrified by the interaction, which can result in it lashing out. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target animals.</description>
-		<iconPath>UI/Icons/Genes/VRE_AnimalFeeder</iconPath>
-		<category>Sanguophage</category>
-		<displayOrder>100</displayOrder>
-		<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
-		<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<verbProperties>
-			<verbClass>Verb_CastAbilityTouch</verbClass>
-			<drawAimPie>false</drawAimPie>
-			<range>-1</range>
-			<warmupTime>2</warmupTime>
-			<targetParams>
-				<canTargetSelf>false</canTargetSelf>
-				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetMechs>false</canTargetMechs>
-				<canTargetBloodfeeders>false</canTargetBloodfeeders>
-			</targetParams>
-		</verbProperties>
-		<comps>
-			<li Class="VanillaRacesExpandedSanguophage.CompProperties_AbilityAnimalfeederBite">
-				<hemogenGain>0.2</hemogenGain>
-				<bloodFilthToSpawnRange>1</bloodFilthToSpawnRange>
-				<resistanceGain>1</resistanceGain>
-			</li>
-			<li Class="CompProperties_AbilityFleckOnTarget">
-				<fleckDef>BloodSplash</fleckDef>
-			</li>
-			<li Class="CompProperties_AbilityRequiresCapacity">
-				<capacity>Eating</capacity>
-			</li>
-		</comps>
-	</AbilityDef>
-	<AbilityDef ParentName="AbilityTouchBase">
-		<defName>VRE_CorpseFeed</defName>
-		<label>corpsefeed</label>
-		<description>Bite the target corpse and extract hemogen directly from their blood. The corpse will lose any remaining blood.\n\nCan only target human corpses.</description>
-		<iconPath>UI/Icons/Genes/VRE_CorpseFeeder</iconPath>
-		<category>Sanguophage</category>
-		<displayOrder>110</displayOrder>
-		<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
-		<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<verbProperties>
-			<verbClass>Verb_CastAbilityTouch</verbClass>
-			<drawAimPie>false</drawAimPie>
-			<range>-1</range>
-			<warmupTime>2</warmupTime>
-			<targetParams>
-				<canTargetSelf>false</canTargetSelf>
-				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetMechs>false</canTargetMechs>
-				<canTargetPawns>false</canTargetPawns>
-				<canTargetCorpses>true</canTargetCorpses>
-			</targetParams>
-		</verbProperties>
-		<comps>
-			<li Class="VanillaRacesExpandedSanguophage.CompProperties_AbilityCorpsefeederBite">
-				<hemogenGain>0.2</hemogenGain>
-				<bloodFilthToSpawnRange>1</bloodFilthToSpawnRange>
-				<resistanceGain>1</resistanceGain>
-			</li>
-			<li Class="CompProperties_AbilityRequiresCapacity">
-				<capacity>Eating</capacity>
-			</li>
-		</comps>
-	</AbilityDef>
-	<AbilityDef ParentName="AbilityTouchBase">
-		<defName>VRE_SanguoFeed</defName>
-		<label>sanguofeed</label>
-		<description>Bite the target and extract hemogen directly from their blood. The target will lose blood and will be insulted by the interaction, but will be otherwise unharmed. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target hemogenic humans.</description>
-		<iconPath>UI/Icons/Genes/VRE_SanguoFeeder</iconPath>
-		<category>Sanguophage</category>
-		<displayOrder>110</displayOrder>
-		<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
-		<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<verbProperties>
-			<verbClass>Verb_CastAbilityTouch</verbClass>
-			<drawAimPie>false</drawAimPie>
-			<range>-1</range>
-			<warmupTime>2</warmupTime>
-			<targetParams>
-				<canTargetSelf>false</canTargetSelf>
-				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetMechs>false</canTargetMechs>
-				<canTargetPawns>true</canTargetPawns>
-				<canTargetBloodfeeders>true</canTargetBloodfeeders>
-			</targetParams>
-		</verbProperties>
-		<comps>
-			<li Class="VanillaRacesExpandedSanguophage.CompProperties_AbilitySanguofeederBite">
-				<hemogenGain>0.2</hemogenGain>
-				<bloodFilthToSpawnRange>1</bloodFilthToSpawnRange>
-				<resistanceGain>1</resistanceGain>
-				<thoughtDefToGiveTarget>VRE_FedOn</thoughtDefToGiveTarget>
-				<opinionThoughtDefToGiveTarget>VRE_FedOnDiablerie_Social</opinionThoughtDefToGiveTarget>
-			</li>
-			<li Class="CompProperties_AbilityFleckOnTarget">
-				<fleckDef>BloodSplash</fleckDef>
-			</li>
-			<li Class="CompProperties_AbilityRequiresCapacity">
-				<capacity>Eating</capacity>
-			</li>
-		</comps>
-	</AbilityDef>
-	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>VRE_Ecstasy</defName>
 		<label>ecstasy</label>
 		<description>Grant a target a feeling of extreme ecstasy for a brief duration, which makes them fall head over heels with the caster.</description>
@@ -145,6 +36,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>VRE_HeartCrush</defName>
 		<label>heart crush</label>
@@ -177,6 +69,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>VRE_FilterInfection</defName>
 		<label>filter infection</label>
@@ -210,6 +103,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>VRE_Hemosmosis</defName>
 		<label>hemosmosis</label>
@@ -242,6 +136,7 @@
 			<Ability_EffectRadius>5.9</Ability_EffectRadius>
 		</statBases>
 	</AbilityDef>
+
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>VRE_Resurrect</defName>
 		<label>resurrect</label>
@@ -275,6 +170,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 	<AbilityDef>
 		<defName>VRE_ToxicCloud</defName>
 		<label>toxic cloud</label>
@@ -299,6 +195,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 	<AbilityDef>
 		<defName>VRE_ViscuousGoo</defName>
 		<label>viscuous goo</label>
@@ -326,4 +223,5 @@
 			</li>
 		</comps>
 	</AbilityDef>
+
 </Defs>

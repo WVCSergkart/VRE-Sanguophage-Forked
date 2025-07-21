@@ -21,7 +21,7 @@
 			<li>TotalHealing</li>
 			
 			<li>Bloodfeeder</li>
-			<li>VRE_AnimalFeeder</li>
+			<li>WVC_Animalfeeder</li>
 			<li>Coagulate</li>
 			<li>LongjumpLegs</li>
 			<li>PiercingSpine</li>
@@ -78,8 +78,8 @@
 			<li>PerfectImmunity</li>			
 			<li>TotalHealing</li>
 			
-			
-			<li>VRE_CorpseFeeder</li>
+			<li>Bloodfeeder</li>
+			<li>WVC_Corpsefeeder</li>
 			<li>Coagulate</li>
 			<li>LongjumpLegs</li>
 			<li>PiercingSpine</li>
@@ -142,7 +142,7 @@
 			<li>TotalHealing</li>
 			
 			<li>Bloodfeeder</li>
-			<li>VRE_SanguoFeeder</li>
+			<li>WVC_Hemofeeder</li>
 			<li>Coagulate</li>
 			
 			<li>Hemogenic</li>

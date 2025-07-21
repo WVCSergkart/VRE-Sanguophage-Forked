@@ -7,6 +7,7 @@
 		<label>talons</label>
 
 		<description>Carriers of this gene have hands that partially resemble talons. This reduces their ability to manipulate objects, but allows them to perform special attacks in melee combat.</description>
+		<geneClass>WVC_XenotypesAndGenes.Gene_AddOrRemoveHediff</geneClass>
 		<iconPath>UI/Icons/Genes/VRE_Talons</iconPath>
 		<displayOrderInCategory>320</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
@@ -58,19 +59,49 @@
 			</wholeNameSymbols>
 		</symbolPack>
 		<modExtensions>
-			<li Class="VEF.Genes.GeneExtension">
-				<hediffsToBodyParts>
-					<li>
-						<hediff>VRE_SharpTalons</hediff>
-						<bodyparts>
-							<li>Hand</li>
-							<li>Hand</li>
-						</bodyparts>
-					</li>
-				</hediffsToBodyParts>
+			<!-- <li Class="VEF.Genes.GeneExtension"> -->
+				<!-- <hediffsToBodyParts> -->
+					<!-- <li> -->
+						<!-- <hediff>VRE_SharpTalons</hediff> -->
+						<!-- <bodyparts> -->
+							<!-- <li>Hand</li> -->
+							<!-- <li>Hand</li> -->
+						<!-- </bodyparts> -->
+					<!-- </li> -->
+				<!-- </hediffsToBodyParts> -->
 
+			<!-- </li> -->
+			<li Class="WVC_XenotypesAndGenes.GeneExtension_Giver">
+				<hediffDefName>VRE_SharpTalons</hediffDefName>
+				<bodyparts>
+				  <li>Hand</li>
+				  <li>Hand</li>
+				</bodyparts>
 			</li>
 		</modExtensions>
 	</GeneDef>
+
+	<HediffDef ParentName="WVC_XenotypesAndGenes_Hediffs_VerbWeapon">
+		<defName>VRE_SharpTalons</defName>
+		<label>sharp talons</label>
+		<description>Sharp talons which can be used in melee combat.</description>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>talons</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<!-- <addedPartProps> -->
+			<!-- <betterThanNatural>true</betterThanNatural> -->
+		<!-- </addedPartProps> -->
+	</HediffDef>
 
 </Defs>
