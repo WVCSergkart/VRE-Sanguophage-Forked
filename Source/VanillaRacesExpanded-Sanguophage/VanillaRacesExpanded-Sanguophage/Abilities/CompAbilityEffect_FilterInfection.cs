@@ -17,7 +17,7 @@ namespace VanillaRacesExpandedSanguophage
             Pawn pawn = target.Pawn;
             if (pawn != null)
             {
-                List<Hediff> infections = pawn.health.hediffSet.hediffs.Where((Hediff hediff) => hediff.def == HediffDefOf.WoundInfection).ToList();
+                List<Hediff> infections = [.. pawn.health.hediffSet.hediffs.Where((Hediff hediff) => hediff.def == HediffDefOf.WoundInfection)];
                 if (infections.Count > 0)
                 {
                     float MaxSeverity = 0;

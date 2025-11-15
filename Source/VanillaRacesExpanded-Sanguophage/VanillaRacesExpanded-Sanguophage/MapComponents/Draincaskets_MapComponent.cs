@@ -8,7 +8,7 @@ namespace VanillaRacesExpandedSanguophage
 {
     public class Draincaskets_MapComponent : MapComponent
     {
-        public List<CompDraincasket> comps = new List<CompDraincasket>();
+        public List<CompDraincasket> comps = [];
 
         public Draincaskets_MapComponent(Map map) : base(map)
         {

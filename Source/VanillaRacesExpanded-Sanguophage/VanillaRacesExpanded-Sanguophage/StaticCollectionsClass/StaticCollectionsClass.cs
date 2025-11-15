@@ -13,13 +13,13 @@ namespace VanillaRacesExpandedSanguophage
     public static class StaticCollectionsClass
     {
 
-        public static HashSet<AbilityDef> allowedSingleUseAbilities = new HashSet<AbilityDef>();
+        public static HashSet<AbilityDef> allowedSingleUseAbilities = [];
 
 
         static StaticCollectionsClass()
         {
             ClearCaches.clearCacheTypes.Add(typeof(StaticCollectionsClass));
-            HashSet<SingleUseAbilityDef> allLists = DefDatabase<SingleUseAbilityDef>.AllDefsListForReading.ToHashSet();
+            HashSet<SingleUseAbilityDef> allLists = [.. DefDatabase<SingleUseAbilityDef>.AllDefsListForReading];
             foreach (SingleUseAbilityDef individualList in allLists)
             {
                 allowedSingleUseAbilities.AddRange(individualList.singleUseAbilities);

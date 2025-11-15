@@ -24,7 +24,7 @@ namespace VanillaRacesExpandedSanguophage
         public override void ProcessInput(Event ev)
         {
             base.ProcessInput(ev);
-            List<FloatMenuOption> list = new List<FloatMenuOption>();
+            List<FloatMenuOption> list = [];
 
             foreach (AbilityDef abilitydef in StaticCollectionsClass.allowedSingleUseAbilities)
             {

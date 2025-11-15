@@ -18,7 +18,7 @@ namespace VanillaRacesExpandedSanguophage
         private static List<ThingDef> cachedCaskets;
         // Same values as in HediffGiver_VacuumBurn, but those are private so it's just copy-pasted.
         private static readonly IntRange BurnDamageRange = new(1, 2);
-        private static readonly SimpleCurve VacuumSecondsBurnRate = new() { new CurvePoint(0.5f, 20f), new CurvePoint(1f, 5f) };
+        private static readonly SimpleCurve VacuumSecondsBurnRate = [new CurvePoint(0.5f, 20f), new CurvePoint(1f, 5f)];
 
         public Job queuedEnterJob;
         public Pawn queuedPawn;
@@ -341,7 +341,7 @@ namespace VanillaRacesExpandedSanguophage
         {
             if (cachedCaskets == null)
             {
-                cachedCaskets = DefDatabase<ThingDef>.AllDefs.Where(def => def.comps.Any(comp => comp.compClass == typeof(CompDraincasket))).ToList();
+                cachedCaskets = [.. DefDatabase<ThingDef>.AllDefs.Where(def => def.comps.Any(comp => comp.compClass == typeof(CompDraincasket)))];
             }
             var availableCaskets = new List<Thing>();
             for (var i = 0; i < cachedCaskets.Count; i++)
