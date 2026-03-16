@@ -1,0 +1,117 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.3.10f1
+CRC: 1788701340
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e809ce9a6b2d703b823279127a4e54a4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9805626a0a960da8f69a56443df5de53
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 01126b209c9d74348a0c6d037878c105
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/VRE_HemogenVat.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/VRE_HemogenDrain.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/BatEars/BatEars_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/HemodynamicAccelerator/HemodynamicAccelerator.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/Draincasket/Draincasket_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Sounds/VRE_Meat/VRE_Meat.ogg
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Sounds/VRE_Hemosmosis/VRE_Hemosmosis.ogg
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/HemogenValve/VRE_HemogenValve.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_SanguophageHemosmosis.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/VRE_HemogenTap.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenAnimalPack/HemogenAnimalPack_a.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Gabriella_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Abilities/SanguophageHeartCrush.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_ExtremeHemogenDrain.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/HemogenSolidifier/HemogenSolidifier_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/BatEars/BatEars_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/BatNose/BatNose_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Bianca_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Sebastian_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/UpperBatEars/VRE_UpperBatEar_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Seth_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Gizmos/VRE_ExtractHemogen.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_SanguophageFilterInfection.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_SanguophageViscousGoo.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Abilities/SanguophageHemosmosis.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_DangerousUVSensitivity.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Armand_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenCorpsePack/HemogenCorpsePack_c.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/XenotypeIcons/Bruxa.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Mona_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/XenotypeIcons/Ekkimian.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_SanguophageEcstasy.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Widgets/AbilityButBG_Red.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/UpperBatEars/VRE_UpperBatEar_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/InvocationMatrix/InvocationMatrix.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_HairStyleSanguineOnly.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_BatWings.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_SanguophageToxicCloud.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenAnimalPack/HemogenAnimalPack_c.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Gizmos/VRE_BloodPipesDeconstruct.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Abilities/SanguophageToxicCloud.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Sounds/VRE_Ecstasy/VRE_Ecstasy.ogg
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Mote/VRE_GasCloud.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Abilities/SanguophageViscousGoo.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_UpperBatEarIcon.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/SmallHemogenAmplifier/SmallHemogenAmplifier.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/BatNose/BatNose_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/VRE_HemogenPipes.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Widgets/EjectFromDraincasket.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Sebastian_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/SmallHemopump/SmallHemopump.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_BatNose.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Gabriella_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/PsychofluidWell/PsychofluidWell.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Pandora_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/Linked/VRE_HemogenPipes_Atlas.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Claude_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Seth_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenAnimalPack/HemogenAnimalPack_b.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/Draincasket/Draincasket_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenCorpsePack/HemogenCorpsePack_a.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Bianca_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenSanguophagePack/HemogenSanguophagePack_b.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Pandora_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_Talons.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Pandora_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/XenotypeIcons/Strigoi.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/Gene_SanguophageHeartCrush.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_LowHemogenDrain.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Abilities/SanguophageEcstasy.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Icons/Genes/VRE_BatEars.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/UpperBatEars/VRE_UpperBatEar_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Claude_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Bianca_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenSanguophagePack/HemogenSanguophagePack_c.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/HemogenSolidifier/HemogenSolidifier_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/BatEars/BatEars_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Armand_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Claude_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/Draincasket/Draincasket_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Abilities/SanguophageFilterInfection.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Mona_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Armand_north.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/Linked/VRE_HemogenPipes_Blueprint_Atlas.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Gabriella_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/VRE_BuriedHemogenPipes.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Mona_east.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenCorpsePack/HemogenCorpsePack_b.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Item/HemogenPacks/HemogenSanguophagePack/HemogenSanguophagePack_a.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Sebastian_south.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Building/HemogenValve/VRE_HemogenValve_Off.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/UI/Widgets/AbilityButBGShrunk_Red.png
+- Assets/Data/vanillaracesexpanded.sanguophage.forked/Textures/Pawn/Hairstyles/Seth_south.png
+Dependencies: []
