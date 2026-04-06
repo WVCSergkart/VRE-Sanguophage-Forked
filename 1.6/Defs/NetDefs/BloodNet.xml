@@ -55,6 +55,8 @@
 			<blueprintGraphicData>
 				<texPath>Building/Linked/VRE_HemogenPipes_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
+			<canLandGravshipOn>true</canLandGravshipOn>
+			<canConstructInCorner>true</canConstructInCorner>
 		</building>
 		<drawerType>MapMeshOnly</drawerType>
 		<altitudeLayer>Conduits</altitudeLayer>
@@ -130,6 +132,8 @@
             <isTargetable>false</isTargetable>
             <expandHomeArea>false</expandHomeArea>
             <canBeDamagedByAttacks>false</canBeDamagedByAttacks>
+			<canLandGravshipOn>true</canLandGravshipOn>
+			<canConstructInCorner>true</canConstructInCorner>
 		</building>
 		<drawerType>MapMeshOnly</drawerType>
 		<altitudeLayer>Conduits</altitudeLayer>

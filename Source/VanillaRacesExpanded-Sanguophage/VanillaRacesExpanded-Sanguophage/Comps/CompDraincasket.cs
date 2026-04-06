@@ -18,7 +18,7 @@ namespace VanillaRacesExpandedSanguophage
         private static List<ThingDef> cachedCaskets;
         // Same values as in HediffGiver_VacuumBurn, but those are private so it's just copy-pasted.
         private static readonly IntRange BurnDamageRange = new(1, 2);
-        private static readonly SimpleCurve VacuumSecondsBurnRate = [new CurvePoint(0.5f, 20f), new CurvePoint(1f, 5f)];
+        private static readonly SimpleCurve VacuumSecondsBurnRate = new() { new CurvePoint(0.5f, 20f), new CurvePoint(1f, 5f) };
 
         public Job queuedEnterJob;
         public Pawn queuedPawn;
@@ -33,8 +33,9 @@ namespace VanillaRacesExpandedSanguophage
         public bool harmedByVacuum = false;
 
         public PawnPosture HeldPawnPosture => PawnPosture.LayingOnGroundFaceUp;
-        public float HeldPawnDrawPos_Y => parent.def.altitudeLayer.AltitudeFor(Altitudes.AltInc);
+        public float HeldPawnDrawPos_Y => parent.DrawPos.y + 0.03658537f;
         public float HeldPawnBodyAngle => parent.Rotation.Opposite.AsAngle;
+        public Vector3 PawnDrawOffset => IntVec3.West.RotatedBy(parent.Rotation).ToVector3();
 
         public float RequiredNutritionRemaining => Mathf.Max(Props.fuelCapacity - Fuel, 0);
         public bool NutritionLoaded => RequiredNutritionRemaining <= 0;
@@ -195,7 +196,7 @@ namespace VanillaRacesExpandedSanguophage
             {
                 EjectContents(map);
             }
-            base.PostDeSpawn(map,mode);
+            base.PostDeSpawn(map, mode);
         }
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
@@ -204,7 +205,6 @@ namespace VanillaRacesExpandedSanguophage
             EjectContents(previousMap);
             base.PostDestroy(mode, previousMap);
         }
-
 
         public bool InsertPawn(Pawn pawn)
         {
@@ -219,9 +219,6 @@ namespace VanillaRacesExpandedSanguophage
         {
             return FuelFilter.Allows(thing);
         }
-
-
-
 
         public bool TryAcceptPawn(Pawn pawn)
         {
@@ -253,7 +250,7 @@ namespace VanillaRacesExpandedSanguophage
 
         public static FloatMenuOption AddCarryToBatteryJobs(Pawn pawn, Pawn target)
         {
-           
+
             var label = "";
             Action action = null;
             foreach (var thing in CasketsFor(pawn, target))
@@ -341,7 +338,7 @@ namespace VanillaRacesExpandedSanguophage
         {
             if (cachedCaskets == null)
             {
-                cachedCaskets = [.. DefDatabase<ThingDef>.AllDefs.Where(def => def.comps.Any(comp => comp.compClass == typeof(CompDraincasket)))];
+                cachedCaskets = DefDatabase<ThingDef>.AllDefs.Where(def => def.comps.Any(comp => comp.compClass == typeof(CompDraincasket))).ToList();
             }
             var availableCaskets = new List<Thing>();
             for (var i = 0; i < cachedCaskets.Count; i++)
@@ -363,31 +360,10 @@ namespace VanillaRacesExpandedSanguophage
         public override void PostDraw()
         {
             base.PostDraw();
-           
+
             if (Occupant is null) return;
-            var drawLoc = parent.DrawPos;
-            drawLoc.y += 10;
 
-            Occupant.Drawer.renderer.DynamicDrawPhaseAt(DrawPhase.Draw, drawLoc, null, neverAimWeapon: true);
-        }
-
-        public float AngleFromBuilding(Rot4 buildingRot)
-        {
-            if (buildingRot == Rot4.North)
-            {
-                return 180;
-            }
-            else if (buildingRot == Rot4.East)
-            {
-                return -90;
-            }
-            else if (buildingRot == Rot4.West)
-            {
-                return 90;
-            }
-
-            return 0;
-
+            Occupant.Drawer.renderer.DynamicDrawPhaseAt(DrawPhase.Draw, parent.DrawPos, null, neverAimWeapon: true);
         }
 
 
