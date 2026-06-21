@@ -13,7 +13,7 @@ namespace VanillaRacesExpandedSanguophage
 
         public ChemicalDef toleranceChemical;
 
-        private bool divideByBodySize;
+        public bool divideByBodySize;
 
         public bool multiplyByGeneToleranceFactors;
 
