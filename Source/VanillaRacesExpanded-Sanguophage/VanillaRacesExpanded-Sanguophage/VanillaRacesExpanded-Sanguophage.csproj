@@ -1,121 +1,83 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CD05ABFA-7249-49F1-AA0A-2FA449A59685}</ProjectGuid>
+    <TargetFramework>net10.0</TargetFramework>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<GenerateDependencyFile>false</GenerateDependencyFile>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VanillaRacesExpandedSanguophage</RootNamespace>
-    <AssemblyName>VanillaRacesExpanded-Sanguophage</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
     <LangVersion>preview</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>AlphaBiomes</AssemblyTitle>
+    <Product>AlphaBiomes</Product>
+    <Copyright>Copyright ©  2017</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\..\1.7\Assemblies\</OutputPath>
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\..\1.7\Assemblies\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\WVC_RacesBiotech\Source\packages\Lib.Harmony.3.0.0-rc.1\lib\net48\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="PipeSystem">
-      <HintPath>References\PipeSystem.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+    <Reference Include="UnityStubs">
+      <HintPath>..\..\..\..\..\UnityStubs.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="Waylith">
+      <HintPath>..\..\..\..\..\Waylith.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    <Reference Include="Waylith.UnityCompat">
+      <HintPath>..\..\..\..\..\Waylith.UnityCompat.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    <Reference Include="Waylith.VideoDecode">
+      <HintPath>..\..\..\..\..\Waylith.VideoDecode.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VEF">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2023507013\1.7\Assemblies\VEF.dll</HintPath>
       <Private>False</Private>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Abilities\CompAbilityEffect_Ecstasy.cs" />
-    <Compile Include="Abilities\CompAbilityEffect_FilterInfection.cs" />
-    <Compile Include="Abilities\CompAbilityEffect_HeartCrush.cs" />
-    <Compile Include="Abilities\CompAbilityEffect_Hemosmosis.cs" />
-    <Compile Include="Abilities\CompAbilityEffect_SingleUse.cs" />
-    <Compile Include="Abilities\CompAbilityEffect_ToxicCloud.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_AbilityEcstasy.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_AbilityFilterInfection.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_AbilityHeartCrush.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_AbilityHemosmosis.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_AbilitySingleUse.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_AbilityToxicCloud.cs" />
-    <Compile Include="AI\JobDrivers\JobDriver_CarryToDraincasket.cs" />
-    <Compile Include="AI\JobDrivers\JobDriver_EnterDraincasket.cs" />
-    <Compile Include="AI\JobDrivers\JobDriver_RefuelDraincasket.cs" />
-    <Compile Include="AI\WorkGivers\WorkGiver_DraincasketRefuel.cs" />
-    <Compile Include="Buildings\Building_Deathrest_Extender.cs" />
-    <Compile Include="Commands\Command_SingleUseAbilities.cs" />
-    <Compile Include="Comps\CompDraincasket.cs" />
-    <Compile Include="Comps\Properties\CompProperties_Draincasket.cs" />
-    <Compile Include="DefExtensions\DeathrestExtension.cs" />
-    <Compile Include="DefOfs\InternalDefOf.cs" />
-    <Compile Include="Defs\SingleUseAbilityDef.cs" />
-    <Compile Include="FloatMenuOptionProviders\FloatMenuOptionProvider_Deaincasket.cs" />
-    <Compile Include="GraphicsCache\GraphicsCache.cs" />
-    <Compile Include="Harmony\Command_Ability_BGTexture.cs" />
-    <Compile Include="Harmony\CompDeathrestBindable_Apply.cs" />
-    <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_GiveHediffToHemogenic.cs" />
-    <Compile Include="IngestionOutcomeDoers\IngestionOutcomeDoer_RemoveHediffs.cs" />
-    <Compile Include="MapComponents\Draincaskets_MapComponent.cs" />
-    <Compile Include="MentalStateWorkers\MentalState_Hemohunter.cs" />
-    <Compile Include="Options\Settings.cs" />
-    <Compile Include="Options\SettingsHelper.cs" />
-    <Compile Include="Options\Settings_Controller.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticCollectionsClass\StaticCollectionsClass.cs" />
-    <Compile Include="Utils\Utils.cs" />
+    <Reference Include="VEF">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2023507013\1.7\Assemblies\PipeSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <PackageReference Include="Lib.Harmony" Version="3.0.0-rc.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AI\JobGivers\" />
     <Folder Include="GameConditions\" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+  <ItemGroup Label="Compile items now included by globbing that were not in the original project file">
+    <Compile Remove="MapComponents\BloodMoon_MapComponent.cs" />
+    <Compile Remove="Harmony\Thing_GetFloatmenuOptions.cs" />
+    <Compile Remove="Harmony\GeneUtility_IsBloodFeeder.cs" />
+    <Compile Remove="Harmony\GeneResourceDrainUtility_OffsetResource.cs" />
+    <Compile Remove="Harmony\GeneGizmo_Resource_Title.cs" />
+    <Compile Remove="Harmony\CompAbilityEffect_BloodfeederBite_Apply.cs" />
+    <Compile Remove="GameConditions\GameCondition_BloodMoon.cs" />
+    <Compile Remove="AI\JobGivers\JobGiver_Hemohunter.cs" />
+    <Compile Remove="AI\JobGivers\JobGiver_GetCorpseHemogen.cs" />
+    <Compile Remove="AI\JobDrivers\JobDriver_Hemohunter.cs" />
+    <Compile Remove="AI\JobDrivers\JobDriver_ExtractHemogenSanguophage.cs" />
+    <Compile Remove="AI\JobDrivers\JobDriver_ExtractHemogenCorpse.cs" />
+    <Compile Remove="AI\JobDrivers\JobDriver_ExtractHemogenAnimal.cs" />
+    <Compile Remove="AI\JobDrivers\JobDriver_DrinkCorpseHemogen.cs" />
+    <Compile Remove="Abilities\Properties\CompProperties_AbilitySanguofeederBite.cs" />
+    <Compile Remove="Abilities\Properties\CompProperties_AbilityCorpsefeederBite.cs" />
+    <Compile Remove="Abilities\Properties\CompProperties_AbilityAnimalfeederBite.cs" />
+    <Compile Remove="Abilities\CompAbilityEffect_SanguofeederBite.cs" />
+    <Compile Remove="Abilities\CompAbilityEffect_CorpsefeederBite.cs" />
+    <Compile Remove="Abilities\CompAbilityEffect_AnimalfeederBite.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
