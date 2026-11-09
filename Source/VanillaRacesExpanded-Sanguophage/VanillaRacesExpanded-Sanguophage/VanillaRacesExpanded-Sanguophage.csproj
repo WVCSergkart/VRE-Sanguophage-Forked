@@ -52,7 +52,7 @@
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2023507013\1.7\Assemblies\PipeSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <PackageReference Include="Lib.Harmony" Version="3.0.0-rc.2" />
+    <PackageReference Include="Lib.Harmony" Version="3.0.0-rc.5" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AI\JobGivers\" />

@@ -6,6 +6,7 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 using HarmonyLib;
+using System.Reflection;
 
 namespace VanillaRacesExpandedSanguophage
 {
@@ -15,7 +16,7 @@ namespace VanillaRacesExpandedSanguophage
         public HarmonyInstance(ModContentPack content) : base(content)
         {
             harmonyInstance = new Harmony("OskarPotocki.VRESanguophage");
-            harmonyInstance.PatchAll();
+            harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         public static Harmony harmonyInstance;
